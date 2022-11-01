@@ -1,0 +1,24 @@
+.title {
+    margin-left: 120px;
+}
+h1 span {
+    color: #C778DD;
+}
+.titulo_container {
+    margin-left: 120px;
+    display: block;
+}
+.titulo {
+    display: block;
+}
+
+.container_skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.skills {
+    display: flex;
+    gap: 20px;
+}
