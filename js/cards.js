@@ -19,7 +19,18 @@ let portfolio = {
     }
 }
 
-let miniProyectos = {}
+let miniProyectos = {
+    instaFront: {
+        nombre: "InstaFront",
+        hechoCon: "html css js",
+        link: "https://emanuelallaria.github.io/instafront/"
+    },
+    superHeroes: {
+        nombre: "SuperHeroes",
+        hechoCon: "html css",
+        link: "https://emanuelallaria.github.io/super-heroes/"
+    }
+}
 
 function agregarPortfolio() {
     let card = document.querySelectorAll(".card")
@@ -58,9 +69,17 @@ agregarPortfolio()
 function agregarMiniProyects() {
     let cardMini = document.querySelectorAll(".cardMini")
     cardMini[0].innerHTML = `
-    <div class="p_card"><p>${miniProyectos}</p></div>
+    <div class="p_card"><p>${miniProyectos.instaFront.hechoCon}</p></div>
     <div class="titulo_card">
-        <h2>${miniProyectos}</h2>
-        <a href="${miniProyectos}">Ver ~~></a>
+        <h2>${miniProyectos.instaFront.nombre}</h2>
+        <a href="${miniProyectos.instaFront.link}">Ver ~~></a>
+    </div>`
+    
+    cardMini[1].innerHTML = `
+    <div class="p_card"><p>${miniProyectos.superHeroes.hechoCon}</p></div>
+    <div class="titulo_card">
+        <h2>${miniProyectos.superHeroes.nombre}</h2>
+        <a href="${miniProyectos.superHeroes.link}">Ver ~~></a>
     </div>`
 }
+agregarMiniProyects()

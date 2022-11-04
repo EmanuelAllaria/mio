@@ -61,4 +61,6 @@ function slidePortfolio() {
         is[1].style.border = "none"
     }
 }
-setInterval(slidePortfolio,2000)
+if(screen.width <= 768){
+    setInterval(slidePortfolio,2000)
+}
